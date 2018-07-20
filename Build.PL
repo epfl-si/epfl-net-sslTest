@@ -24,7 +24,8 @@ my $builder = Module::Build->new(
     'Term::ANSIColor'      => '4.06',
     'WebService::SSLLabs'  => '0.30',
   },
-  add_to_cleanup => ['EPFL-Net-SSLTest-*'],
+  add_to_cleanup     => ['EPFL-Net-SSLTest-*'],
+  create_makefile_pl => 'traditional',
 );
 
 $builder->create_build_script();
