@@ -1,60 +1,63 @@
 EPFL-Net-SSLTest
+================
 
-The README is used to introduce the module and provide instructions on
-how to install the module, any machine dependencies it may have (for
-example C compilers and installed libraries) and any other information
-that should be provided before the module is installed.
+[![Build Status][travis-image]][travis-url]
+[![Apache License 2.0][license-image]][license-url]
+[![CPAN Version][cpan-image]][cpan-url]
 
-A README file is required for CPAN modules since CPAN extracts the README
-file from a module distribution so that people browsing the archive
-can use it to get an idea of the module's uses. It is usually a good idea
-to provide version information here so that people can decide whether
-fixes for the module are worth downloading.
+Website SSL accessibility validator.
 
+Install
+-------
 
-INSTALLATION
+Via CPAN with :
 
-To install this module, run the following commands:
+```bash
+cpan install EPFL::Net::SSLTest
+```
 
-	perl Build.PL
-	./Build
-	./Build test
-	./Build install
+Usage
+-----
 
-SUPPORT AND DOCUMENTATION
+### Command Line
 
-After installing, you can find documentation for this module with the
-perldoc command.
+```bash
+epfl-net-ssl-test --help
 
-    perldoc EPFL::Net::SSLTest
+Usage:
+  epfl-net-ssl-test --help
+  epfl-net-ssl-test --domain=www.epfl.ch
+```
 
-You can also look for information at:
+Screenshot
+----------
 
-    RT, CPAN's request tracker (report bugs here)
-        https://rt.cpan.org/NoAuth/Bugs.html?Dist=EPFL-Net-SSLTest
+![command line screenshot](https://raw.githubusercontent.com/epfl-idevelop/epfl-net-sslTest/master/docs/readme/screenshot.png)
 
-    AnnoCPAN, Annotated CPAN documentation
-        http://annocpan.org/dist/EPFL-Net-SSLTest
+Contributing
+------------
 
-    CPAN Ratings
-        https://cpanratings.perl.org/d/EPFL-Net-SSLTest
+Contributions are always welcome.
 
-    Search CPAN
-        https://metacpan.org/release/EPFL-Net-SSLTest
+See [Contributing](CONTRIBUTING.md).
 
+Developer
+---------
 
-LICENSE AND COPYRIGHT
+  * [William Belle](https://github.com/williambelle)
 
-Copyright (C) 2018 William Belle
+License
+-------
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+Apache License 2.0
 
-    L<http://www.apache.org/licenses/LICENSE-2.0>
+(c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2018.
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+See the [LICENSE](LICENSE) file for more details.
+
+[travis-image]: https://travis-ci.org/epfl-idevelop/epfl-net-sslTest.svg?branch=master
+[travis-url]: https://travis-ci.org/epfl-idevelop/epfl-net-sslTest
+[license-image]: https://img.shields.io/badge/license-Apache%202.0-blue.svg
+[license-url]: https://raw.githubusercontent.com/epfl-idevelop/epfl-net-sslTest/master/LICENSE
+[cpan-image]: https://img.shields.io/cpan/v/EPFL-Net-SSLTest.svg
+[cpan-url]: https://metacpan.org/release/EPFL-Net-SSLTest
