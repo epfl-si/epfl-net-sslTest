@@ -68,20 +68,21 @@ if ( $host->ready() ) {
           or croak "Couldn't write: $OS_ERROR";
       }
       else {
-        print color('red'), '✘ Grade ', $endpoint->grade(), "\n\n",
+        print "\n", color('red'), '✘ Grade ', $endpoint->grade(), "\n\n",
           color('clear')
           or croak "Couldn't write: $OS_ERROR";
       }
     }
     else {
-      print color('red'), '✘ Diode', "\n", color('clear')
+      print "\n", color('red'), '✘ Diode', "\n", color('clear')
         or croak "Couldn't write: $OS_ERROR";
       checkLocalCertificate($domain);
     }
   }
 }
 else {
-  print color('red'), '✘ ', $host->status_message(), "\n\n", color('clear')
+  print "\n", color('red'), '✘ ', $host->status_message(), "\n\n",
+    color('clear')
     or croak "Couldn't write: $OS_ERROR";
   exit 1;
 }
@@ -95,11 +96,11 @@ sub checkLocalCertificate {
 
   my $response = $ua->request($request);
   if ( $response->is_error ) {
-    print color('red'), '✘ SSL Certificate', "\n", color('clear')
+    print color('red'), '✘ SSL Certificate', "\n\n", color('clear')
       or croak "Couldn't write: $OS_ERROR";
   }
   if ( $response->is_success ) {
-    print color('green'), '✔ SSL Certificate', "\n", color('clear')
+    print color('green'), '✔ SSL Certificate', "\n\n", color('clear')
       or croak "Couldn't write: $OS_ERROR";
   }
 
