@@ -6,61 +6,40 @@ use warnings;
 
 =head1 NAME
 
-EPFL::Net::SSLTest - The great new EPFL::Net::SSLTest!
+EPFL::Net::SSLTest -  Website SSL accessibility validator
 
 =head1 VERSION
 
-Version 0.01
+Version 1.00
 
 =cut
 
-our $VERSION = '0.01';
-
+our $VERSION = '1.00';
 
 =head1 SYNOPSIS
 
-Quick summary of what the module does.
+Nothing to see here for now.
 
-Perhaps a little code snippet.
+Check the command line epfl-net-ssl-test
 
-    use EPFL::Net::SSLTest;
+=head1 DESCRIPTION
 
-    my $foo = EPFL::Net::SSLTest->new();
-    ...
-
-=head1 EXPORT
-
-A list of functions that can be exported.  You can delete this section
-if you don't export anything, such as for a purely object-oriented module.
+A simple module to validate SSL accessibility of a Website
 
 =head1 SUBROUTINES/METHODS
 
-=head2 function1
-
-=cut
-
-sub function1 {
-}
-
-=head2 function2
-
-=cut
-
-sub function2 {
-}
+None
 
 =head1 AUTHOR
 
 William Belle, C<< <william.belle at gmail.com> >>
 
-=head1 BUGS
+=head1 BUGS AND LIMITATIONS
 
-Please report any bugs or feature requests to C<bug-epfl-net-ssltest at rt.cpan.org>, or through
-the web interface at L<https://rt.cpan.org/NoAuth/ReportBug.html?Queue=EPFL-Net-SSLTest>.  I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
-
-
-
+Please report any bugs or feature requests here
+L<https://github.com/epfl-idevelop/epfl-net-sslTest/issues>.
+I will be notified, and then you'll automatically be notified of progress on
+your bug as I make changes.
 
 =head1 SUPPORT
 
@@ -68,14 +47,9 @@ You can find documentation for this module with the perldoc command.
 
     perldoc EPFL::Net::SSLTest
 
-
 You can also look for information at:
 
 =over 4
-
-=item * RT: CPAN's request tracker (report bugs here)
-
-L<https://rt.cpan.org/NoAuth/Bugs.html?Dist=EPFL-Net-SSLTest>
 
 =item * AnnoCPAN: Annotated CPAN documentation
 
@@ -91,13 +65,9 @@ L<https://metacpan.org/release/EPFL-Net-SSLTest>
 
 =back
 
-
-=head1 ACKNOWLEDGEMENTS
-
-
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2018 William Belle.
+Copyright ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2018.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -111,7 +81,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-
 =cut
 
-1; # End of EPFL::Net::SSLTest
+1;
