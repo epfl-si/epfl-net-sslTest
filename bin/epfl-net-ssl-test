@@ -68,7 +68,7 @@ if ( $host->ready() ) {
           or croak "Couldn't write: $OS_ERROR";
       }
       else {
-        print "\n", color('red'), '✘ Grade ', $endpoint->grade(), "\n\n",
+        print color('red'), '✘ Grade ', $endpoint->grade(), "\n\n",
           color('clear')
           or croak "Couldn't write: $OS_ERROR";
       }
