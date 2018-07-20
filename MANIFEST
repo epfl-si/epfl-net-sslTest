@@ -1,3 +1,4 @@
+bin/epfl-net-ssl-test
 Changes
 ignore.txt
 lib/EPFL/Net/SSLTest.pm
