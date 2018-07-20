@@ -56,17 +56,19 @@ while ( not $host = $labs->analyze( host => $domain )->complete() ) {
 if ( $host->ready() ) {
   foreach my $endpoint ( $host->endpoints() ) {
     if ( $endpoint->ready() ) {
+      print "\n", $endpoint->ip_address(), "\n"
+        or croak "Couldn't write: $OS_ERROR";
       print color('green'), '✔ Diode', "\n", color('clear')
         or croak "Couldn't write: $OS_ERROR";
       print color('green'), '✔ SSL Certificate', "\n", color('clear')
         or croak "Couldn't write: $OS_ERROR";
       if ( $endpoint->grade() eq 'A' or $endpoint->grade() eq 'A+' ) {
-        print color('green'), '✔ Grade ', $endpoint->grade(), "\n",
+        print color('green'), '✔ Grade ', $endpoint->grade(), "\n\n",
           color('clear')
           or croak "Couldn't write: $OS_ERROR";
       }
       else {
-        print color('red'), '✘ Grade ', $endpoint->grade(), "\n",
+        print color('red'), '✘ Grade ', $endpoint->grade(), "\n\n",
           color('clear')
           or croak "Couldn't write: $OS_ERROR";
       }
@@ -79,7 +81,7 @@ if ( $host->ready() ) {
   }
 }
 else {
-  print color('red'), '✘ ', $host->status_message(), "\n", color('clear')
+  print color('red'), '✘ ', $host->status_message(), "\n\n", color('clear')
     or croak "Couldn't write: $OS_ERROR";
   exit 1;
 }
