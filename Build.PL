@@ -24,6 +24,11 @@ my $builder = Module::Build->new(
     'Term::ANSIColor'      => '4.06',
     'WebService::SSLLabs'  => '0.30',
   },
+  meta_merge => {
+    resources => {
+      repository => 'https://github.com/epfl-idevelop/epfl-net-sslTest',
+    },
+  },
   add_to_cleanup     => ['EPFL-Net-SSLTest-*'],
   create_makefile_pl => 'traditional',
 );
