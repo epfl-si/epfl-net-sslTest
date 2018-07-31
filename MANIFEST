@@ -1,5 +1,6 @@
 bin/epfl-net-ssl-test
 Changes
+CONTRIBUTING.md
 ignore.txt
 lib/EPFL/Net/SSLTest.pm
 LICENSE
