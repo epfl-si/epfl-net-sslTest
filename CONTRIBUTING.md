@@ -14,13 +14,6 @@ perl Build.PL
 perl Build installdeps
 ```
 
-Lint
-----
-
-```bash
-perlcritic lib/ bin/
-```
-
 Test
 ----
 
@@ -34,6 +27,12 @@ Code coverage:
 
 ```bash
 perl Build testcover
+```
+
+To enable Author tests:
+
+```bash
+export RELEASE_TESTING=1
 ```
 
 Run
