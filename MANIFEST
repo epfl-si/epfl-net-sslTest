@@ -9,6 +9,7 @@ MANIFEST.SKIP
 README.md
 t/00-load.t
 t/boilerplate.t
+t/critic.t
 t/manifest.t
 t/pod-coverage.t
 t/pod.t
